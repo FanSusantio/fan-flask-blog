@@ -46,7 +46,7 @@ class User(UserMixin, db.Model):
     comments = relationship("Comment", back_populates="comment_author")
 
 # Line below only required once, when creating DB.
-db.create_all()
+# db.create_all()
 
 
 class BlogPost(db.Model):
